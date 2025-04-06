@@ -20,7 +20,7 @@ public class audio : MonoBehaviour
         musicAudio.Play();
     }
 
-    public void bntStart(AudioClip nutClip)
+    public void bntClick(AudioClip nutClip)
     {
         vfxAudio.clip= nutClip;
         vfxAudio.PlayOneShot(nutClip);

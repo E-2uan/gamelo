@@ -12,4 +12,14 @@ public class ChucnangMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void backToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void playAgain()
+    {
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
+    }
 }
