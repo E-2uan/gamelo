@@ -155,7 +155,7 @@ RectTransform:
   m_Father: {fileID: 2125642675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.67058825, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e9d3e06c6e6f9f40a3b6e1a0b5eb80b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c85fc96c9521444bb58fa6ad33d901b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -464,12 +464,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215039042}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9720}
+  m_LocalScale: {x: 108, y: 108, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1120738079}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &283745221
 GameObject:
@@ -966,7 +966,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -1070,8 +1070,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1088203114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.68235296, y: 0}
+  m_AnchorMax: {x: 0.68235296, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1267,7 +1267,7 @@ RectTransform:
   m_Father: {fileID: 844778015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.68235296, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1291,7 +1291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e9d3e06c6e6f9f40a3b6e1a0b5eb80b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c85fc96c9521444bb58fa6ad33d901b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1610,8 +1610,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1414044815}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.67058825, y: 0}
+  m_AnchorMax: {x: 0.67058825, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1779,6 +1779,7 @@ RectTransform:
   - {fileID: 200308715}
   - {fileID: 1651036987}
   - {fileID: 1033044489}
+  - {fileID: 215039045}
   m_Father: {fileID: 1924204219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1956,7 +1957,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -2073,7 +2074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc5190ebf0c44f74bac3e4f0972f6a8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e41af10dde8127a4dbf7d25218f20e30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2347,7 +2348,7 @@ MonoBehaviour:
   m_MinValue: -80
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: -23
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2420,7 +2421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc5190ebf0c44f74bac3e4f0972f6a8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e41af10dde8127a4dbf7d25218f20e30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3190,7 +3191,7 @@ MonoBehaviour:
   m_MinValue: -80
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: -22
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3253,6 +3254,10 @@ PrefabInstance:
     - target: {fileID: 7324124638194513514, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_Name
       value: chuyenCanh
+      objectReference: {fileID: 0}
+    - target: {fileID: 7324124638194513514, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_Pivot.x
@@ -3410,6 +3415,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1924204219}
-  - {fileID: 215039045}
   - {fileID: 1945348765}
   - {fileID: 7981781314290166967}
