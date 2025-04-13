@@ -155,7 +155,7 @@ RectTransform:
   m_Father: {fileID: 2125642675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.9411765, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e9d3e06c6e6f9f40a3b6e1a0b5eb80b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c85fc96c9521444bb58fa6ad33d901b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -966,7 +966,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -1070,8 +1070,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1088203114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.9411765, y: 0}
+  m_AnchorMax: {x: 0.9411765, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1267,7 +1267,7 @@ RectTransform:
   m_Father: {fileID: 844778015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.9411765, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1291,7 +1291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8e9d3e06c6e6f9f40a3b6e1a0b5eb80b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c85fc96c9521444bb58fa6ad33d901b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1610,8 +1610,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1414044815}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0.9411765, y: 0}
+  m_AnchorMax: {x: 0.9411765, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1775,10 +1775,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1945348765}
   - {fileID: 1733040797}
   - {fileID: 200308715}
-  - {fileID: 1651036987}
   - {fileID: 1033044489}
+  - {fileID: 1651036987}
   m_Father: {fileID: 1924204219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1956,7 +1957,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1802562800}
         m_TargetAssemblyTypeName: audio, Assembly-CSharp
-        m_MethodName: bntClick
+        m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -2073,7 +2074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc5190ebf0c44f74bac3e4f0972f6a8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e41af10dde8127a4dbf7d25218f20e30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2420,7 +2421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc5190ebf0c44f74bac3e4f0972f6a8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e41af10dde8127a4dbf7d25218f20e30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2639,7 +2640,7 @@ GameObject:
   - component: {fileID: 1924204219}
   - component: {fileID: 1924204220}
   m_Layer: 0
-  m_Name: bnt&&txt_menu
+  m_Name: Menu chinh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2752,12 +2753,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945348763}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0129, y: -0.0084, z: 0}
-  m_LocalScale: {x: 4.2729754, y: 4.3254337, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3932, y: -0.9072, z: -9720}
+  m_LocalScale: {x: 461.48135, y: 467.14685, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1120738079}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950101316
 GameObject:
@@ -3254,6 +3255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chuyenCanh
       objectReference: {fileID: 0}
+    - target: {fileID: 7324124638194513514, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3280,11 +3285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 2.0848
+      value: 2.0847778
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -0.00012207
+      value: -0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3411,5 +3416,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1924204219}
   - {fileID: 215039045}
-  - {fileID: 1945348765}
   - {fileID: 7981781314290166967}
