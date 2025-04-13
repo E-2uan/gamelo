@@ -11,7 +11,7 @@ public class audio : MonoBehaviour
 
     //bien luu tru AudioClip
     public AudioClip musicCLip;
-    public AudioClip nutClip;
+    public AudioClip vfxClip;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,10 @@ public class audio : MonoBehaviour
         musicAudio.clip= musicCLip; ;
         musicAudio.Play();
     }
-
-    public void bntClick(AudioClip nutClip)
-    {
+    public void btnStart(AudioClip nutClip)
+    { 
         vfxAudio.clip= nutClip;
         vfxAudio.PlayOneShot(nutClip);
     }
+  
 }
