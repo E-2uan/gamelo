@@ -9,6 +9,7 @@ public class playerTuongTacThanhMau : MonoBehaviour
     public ThanhMau ThanhMau;
     public float LuongMauHienTai;
     public float LuongMauToiDa =10;
+    public GameObject GameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class playerTuongTacThanhMau : MonoBehaviour
             if (LuongMauHienTai < 0)
             {
                 Destroy(this.gameObject);
+                GameOver.SetActive(true);
             }
         }
     }
@@ -44,6 +46,7 @@ public class playerTuongTacThanhMau : MonoBehaviour
             if (LuongMauHienTai <= 0)
             {
                 Destroy(this.gameObject);
+                GameOver.SetActive(true);
             }
         }
     }
