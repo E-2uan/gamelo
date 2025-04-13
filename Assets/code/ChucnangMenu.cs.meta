@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/code/ChucnangMenu.cs.meta
 guid: ca1b4e88f28ef4c47b9eaacab93821ee
+========
+guid: 95fb942d029098d4fa06651e2e972f68
+>>>>>>>> 17e067be574422a6f9b8ac308fbf11be70b44424:Assets/code/di chuyen player.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

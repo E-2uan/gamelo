@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/chuyenCanh.prefab.meta
 guid: e8a6013c8dec4594d908aecad67036ab
+========
+guid: efbdc82b7aa831e418394775d8fcafe6
+>>>>>>>> 17e067be574422a6f9b8ac308fbf11be70b44424:Assets/do hoa map/platformer-pixel-art-hell-2d-tileset/Tiles/tao map/tao map.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
