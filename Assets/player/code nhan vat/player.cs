@@ -9,7 +9,9 @@ public class dichuyen : MonoBehaviour
     public Transform KiemTraDat;
     public float BanKinhKiemTra = 0.2f;
     public LayerMask LayerMatDat;
+    public Transform Dau;
 
+    private bool DauChamDat = false;
     private Vector3 NhanDiChuyen;
     private Animator ani;
     private Rigidbody2D rb;
@@ -26,6 +28,9 @@ public class dichuyen : MonoBehaviour
     {
         // kiem tra co dung tren dat hay khong
         DangNamDat = Physics2D.OverlapCircle(KiemTraDat.position, BanKinhKiemTra, LayerMatDat);
+
+        //kiem tra dau co cham dat hay khong
+        DauChamDat = Physics2D.OverlapCircle(Dau.position, BanKinhKiemTra, LayerMatDat);
 
         //nhan lenh di chuyen tu ban phim
         NhanDiChuyen.x = Input.GetAxis("Horizontal");
@@ -48,7 +53,7 @@ public class dichuyen : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
         }
         // Xu ly nhay
-        if (Input.GetKeyDown(KeyCode.Space) && DangNamDat)
+        if (Input.GetKeyDown(KeyCode.Space) && DangNamDat && !DauChamDat)
         {
             rb.velocity = new Vector2(rb.velocity.x, LucNhay);
             ani.SetTrigger("nhay");

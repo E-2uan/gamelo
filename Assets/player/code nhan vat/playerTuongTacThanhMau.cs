@@ -32,6 +32,18 @@ public class playerTuongTacThanhMau : MonoBehaviour
                 GameOver.SetActive(true);
             }
         }
+        if (collision.gameObject.CompareTag("0"))
+        {
+            
+            ThanhMau.CapNhatThanhMau(LuongMauHienTai=0, LuongMauToiDa);
+
+            //xoa nhan vat khi het mau
+            if (LuongMauHienTai == 0)
+            {
+                Destroy(this.gameObject);
+                GameOver.SetActive(true);
+            }
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)

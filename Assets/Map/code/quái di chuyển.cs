@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Resources;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class enemy : MonoBehaviour
@@ -52,12 +53,22 @@ public class enemy : MonoBehaviour
         scaler.x *= -1; // lat nguoc quai
         transform.localScale = scaler;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("player"))
-        {
-            animator.SetTrigger("quai");
-        }
-    }
+    // quai danh nhan vat khi den gan
    
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("player"))
+        {
+            animator.SetTrigger("khôngđánh");
+        }
+        else
+        {
+            if (collision.gameObject.CompareTag("player"))
+            {
+                animator.SetTrigger("quai");
+            }
+        }
+   }
+
 }
