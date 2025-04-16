@@ -14,9 +14,9 @@ public class máuvàdamecủaquái : MonoBehaviour
         LuongMauHienTai = LuongMauToiDa;
     }
 
-      private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Dan"))
         {
             LuongMauHienTai -= 1;       
 

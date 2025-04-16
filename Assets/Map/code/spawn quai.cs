@@ -41,7 +41,7 @@ public class spawnquai : MonoBehaviour
                     originalScale.z
                 );
             }
-            if(spawnPoint.position.x > transform.position.x)
+            if (spawnPoint.position.x > transform.position.x)
             {
                 // Spawn bên phải → nhìn trái
                 newEnemy.transform.localScale = new Vector3(

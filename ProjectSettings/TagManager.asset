@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - player
   - 0
+  - Dan
   layers:
   - Default
   - TransparentFX
