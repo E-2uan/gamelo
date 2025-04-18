@@ -3900,6 +3900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cd64087c624e0499743cc3922ad9ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1893007324 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8757894945375616636, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+  m_PrefabInstance: {fileID: 7981781314290166967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1909907763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,7 +5088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7324124638194513514, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_Pivot.x
@@ -5219,6 +5224,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2411533805460145672, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411533805460145672, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4504199da4e95064bb55b9356650125f, type: 3}
@@ -5226,6 +5235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio
       objectReference: {fileID: 0}
+    - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+      propertyPath: sfxAudio
+      value: 
+      objectReference: {fileID: 1893007324}
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: musicCLip
       value: 
