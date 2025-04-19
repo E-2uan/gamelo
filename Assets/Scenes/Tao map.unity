@@ -274,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2109475491558833141, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_TagString
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 2285080610686215366, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: GameOver
       value: 
@@ -326,6 +330,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3938109827104175814, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_Radius
+      value: 0.5271978
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938109827104175814, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06638563
+      objectReference: {fileID: 0}
+    - target: {fileID: 3938109827104175814, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.46181542
+      objectReference: {fileID: 0}
     - target: {fileID: 4918248914958005219, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -333,6 +349,18 @@ PrefabInstance:
     - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: LayerMatDat.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527103484446976409, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527103484446976409, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527103484446976409, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: 5936059700420714131, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: m_Name
@@ -389,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 539448806}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.4, y: 4.02, z: 0}
+  m_LocalPosition: {x: 17.64, y: 4.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,7 +471,7 @@ GameObject:
   - component: {fileID: 587886564}
   m_Layer: 7
   m_Name: Husky_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 587886562}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.52, y: -1.8299999, z: 0.041181047}
+  m_LocalPosition: {x: -66.59, y: 4.89, z: 0.041181047}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -539,7 +567,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &587886568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -654,7 +682,7 @@ GameObject:
   - component: {fileID: 636257948}
   m_Layer: 7
   m_Name: DarkGoblin_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +696,7 @@ Transform:
   m_GameObject: {fileID: 636257942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.776443, y: 8.546023, z: 0.041181047}
+  m_LocalPosition: {x: -58.87, y: 4.94, z: 0.041181047}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -721,7 +749,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &636257946
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1310,15 +1338,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5271001685867235692, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.87
+      value: -10.77
       objectReference: {fileID: 0}
     - target: {fileID: 5271001685867235692, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.28
+      value: 6.23
       objectReference: {fileID: 0}
     - target: {fileID: 5799620434505929622, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799620434505929622, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6631813715466257468, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: m_Name
@@ -1419,11 +1451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: spawns.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: enemies.Array.size
@@ -1449,6 +1481,10 @@ PrefabInstance:
       propertyPath: spawns.Array.data[6]
       value: 
       objectReference: {fileID: 1483688287}
+    - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
+      propertyPath: spawns.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
@@ -1518,7 +1554,7 @@ GameObject:
   - component: {fileID: 1315896248}
   m_Layer: 7
   m_Name: Hellhound_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1532,7 +1568,7 @@ Transform:
   m_GameObject: {fileID: 1315896246}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -49.08, y: 3.15, z: 0.041181047}
+  m_LocalPosition: {x: -14.78, y: 5.9, z: 0.041181047}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1614,7 +1650,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1315896252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1953,7 +1989,7 @@ GameObject:
   - component: {fileID: 1580399364}
   m_Layer: 7
   m_Name: Skeleton_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1967,7 +2003,7 @@ Transform:
   m_GameObject: {fileID: 1580399357}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.99, y: -1.73, z: 0.041181047}
+  m_LocalPosition: {x: -63.21, y: 5.19, z: 0.041181047}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2101,7 +2137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1580399364
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2134,9 +2170,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000085149495, y: -0.07367424}
+  m_Offset: {x: -0.08736517, y: -0.07367424}
   serializedVersion: 2
-  m_Radius: 1.1933339
+  m_Radius: 1.1059687
 --- !u!1001 &1587153474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2415,6 +2451,14 @@ PrefabInstance:
     - target: {fileID: 5935270912389461704, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
       propertyPath: m_Name
       value: tricklor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957313863937973475, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957313863937973475, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.65
       objectReference: {fileID: 0}
     - target: {fileID: 8837264218485865292, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
       propertyPath: m_LocalPosition.x
