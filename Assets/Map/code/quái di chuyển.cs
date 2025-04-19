@@ -8,15 +8,19 @@ public class enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float distance = 5f;
+    [SerializeField] private float attackRange = 1.5f;
+
     private Vector3 startPos;
     private bool movingLeft = true;
     private Animator animator;
+    private Transform player;
 
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         animator = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -24,7 +28,11 @@ public class enemy : MonoBehaviour
     {
         //khai bao gia tri di chuyen trai phai
         float leftBound = startPos.x + distance;
-        float rightBound = startPos.x - distance; 
+        float rightBound = startPos.x - distance;
+
+        // Kiểm tra khoảng cách đến player
+        float playerDistance = Vector2.Distance(transform.position, player.position);
+
         if (movingLeft)
         {
             //di chuyen trai
@@ -53,22 +61,6 @@ public class enemy : MonoBehaviour
         scaler.x *= -1; // lat nguoc quai
         transform.localScale = scaler;
     }
-    // quai danh nhan vat khi den gan
-   
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (!collision.gameObject.CompareTag("player"))
-        {
-            animator.SetTrigger("khôngđánh");
-        }
-        else
-        {
-            if (collision.gameObject.CompareTag("player"))
-            {
-                animator.SetTrigger("quai");
-            }
-        }
-   }
+    
 
 }
