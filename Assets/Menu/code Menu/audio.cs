@@ -1,27 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.VirtualTexturing;
-using UnityEngine.SceneManagement;
 
-public class SoundManager: MonoBehaviour
-{
-    //bien truy cap vao nguon am thanh
-    public static SoundManager instance { get; private set; }
-
+public class audio : MonoBehaviour
+{   
     //Bien luu tru AudioSource
     public AudioSource musicAudio;
     public AudioSource sfxAudio;
 
     //bien luu tru AudioClip
     public AudioClip musicCLip;
-
-    private void Awake()
-    {
-        instance = this;
-        sfxAudio = GetComponent<AudioSource>();
-    }
+    public AudioClip sfxClip;
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +24,5 @@ public class SoundManager: MonoBehaviour
         sfxAudio.clip= nutClip;
         sfxAudio.PlayOneShot(nutClip);
     }
-
-    //ham chay sound
-    public void PlaySoundOneShot(AudioClip sound)
-    {
-        sfxAudio.PlayOneShot(sound);
-    }
+  
 }
