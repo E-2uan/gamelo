@@ -18,8 +18,8 @@ public class dichuyen : MonoBehaviour
     private bool DangNamDat = false;
 
     //quyen sua nhac
-    public float ThoiGianCan = 0.001f;
-    private float ThoiGianGiu = 0f;
+    public float ThoiGianCan = 1f;
+    private float ThoiGianGiu = -1f;
 
     //Bien Sound effects
     public AudioClip jumpClip;
@@ -66,17 +66,18 @@ public class dichuyen : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
             }
             // tang time neu con di chuyen
-            ThoiGianGiu += Time.deltaTime;
+            ThoiGianGiu += 0.02f ;
         }
         //phat nhac neu di chuyen
         if (NhanDiChuyen.x != 0)
         {
-            if (ThoiGianGiu >= ThoiGianCan)
+            if (ThoiGianGiu >= 1)
             {
                 SoundManager.instance.PlaySoundOneShot(runClip);
 
                 //dat lai time sau khi phat
                 ThoiGianGiu = 0f;
+                
             }
         }
         // dat lai time sau khi ko di chuyen nua
