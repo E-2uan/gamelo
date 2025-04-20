@@ -17,6 +17,10 @@ public class dichuyen : MonoBehaviour
     private Rigidbody2D rb;
     private bool DangNamDat = false;
 
+    //quyen sua nhac
+    public float ThoiGianCan = 0.001f;
+    private float ThoiGianGiu = 0f;
+
     //Bien Sound effects
     public AudioClip jumpClip;
     public AudioClip runClip;
@@ -50,14 +54,35 @@ public class dichuyen : MonoBehaviour
         // xac dinh huong nhin nhan vat
         if (NhanDiChuyen.x != 0)
         {
-            SoundManager.instance.PlaySoundOneShot(runClip);
+
             // phai
             if (NhanDiChuyen.x > 0)
-                transform.localScale = new Vector3(1, 1, 1);
+            {
+                transform.localScale = new Vector3(1, 1, 1); 
+            }
             //trai
             else
+            {
                 transform.localScale = new Vector3(-1, 1, 1);
+            }
+            // tang time neu con di chuyen
+            ThoiGianGiu += Time.deltaTime;
         }
+        //phat nhac neu di chuyen
+        if (NhanDiChuyen.x != 0)
+        {
+            if (ThoiGianGiu >= ThoiGianCan)
+            {
+                SoundManager.instance.PlaySoundOneShot(runClip);
+
+                //dat lai time sau khi phat
+                ThoiGianGiu = 0f;
+            }
+        }
+        // dat lai time sau khi ko di chuyen nua
+        else
+            ThoiGianGiu = 0f;
+
         // Xu ly nhay
         if (Input.GetKeyDown(KeyCode.Space) && DangNamDat && !DauChamDat)
         {
