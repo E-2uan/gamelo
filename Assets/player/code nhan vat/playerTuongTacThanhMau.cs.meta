@@ -3,7 +3,11 @@ guid: 9bc35fde61fb1e1458bc0ba1c558559a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ThanhMau: {instanceID: 0}
+  - GameOver: {instanceID: 0}
+  - dieClip: {instanceID: 0}
+  - hurtClip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
