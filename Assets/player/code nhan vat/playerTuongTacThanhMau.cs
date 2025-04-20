@@ -16,6 +16,8 @@ public class playerTuongTacThanhMau : MonoBehaviour
     public AudioClip dieClip;
     public AudioClip hurtClip;
 
+    //bien cua am thanh
+    private float ThoiGianGiu = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -61,8 +63,18 @@ public class playerTuongTacThanhMau : MonoBehaviour
             LuongMauHienTai -= damagePerSecond * Time.deltaTime;
             ThanhMau.CapNhatThanhMau(LuongMauHienTai, LuongMauToiDa);
 
-            //am thanh mat mau
-            SoundManager.instance.PlaySoundOneShot(hurtClip);
+            // tang time neu con mat mau
+            ThoiGianGiu += 0.05f;
+
+            //am thanh mat mau lien tuc
+            if (ThoiGianGiu >= 1)
+            {
+                SoundManager.instance.PlaySoundOneShot(hurtClip);
+
+                //dat lai time sau khi phat
+                ThoiGianGiu = 0f;
+            }
+
             if (LuongMauHienTai <= 0)
             {
                 //am thanh bi chet

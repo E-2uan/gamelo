@@ -361,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: runClip
       value: 
-      objectReference: {fileID: 8300000, guid: 98eb3275ed6cb7f4eb798326c6f5d9cc, type: 3}
+      objectReference: {fileID: 8300000, guid: aef1c33e09af49546b5c2524334a41d5, type: 3}
     - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: jumpClip
       value: 
@@ -1463,7 +1463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 30
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: enemies.Array.size

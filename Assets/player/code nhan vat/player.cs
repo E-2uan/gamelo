@@ -18,8 +18,7 @@ public class dichuyen : MonoBehaviour
     private bool DangNamDat = false;
 
     //quyen sua nhac
-    public float ThoiGianCan = 1f;
-    private float ThoiGianGiu = -1f;
+    private float ThoiGianGiu = 0f;
 
     //Bien Sound effects
     public AudioClip jumpClip;
@@ -76,8 +75,7 @@ public class dichuyen : MonoBehaviour
                 SoundManager.instance.PlaySoundOneShot(runClip);
 
                 //dat lai time sau khi phat
-                ThoiGianGiu = 0f;
-                
+                ThoiGianGiu = 0f;      
             }
         }
         // dat lai time sau khi ko di chuyen nua
