@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,14 +8,14 @@ public class playerTuongTacThanhMau : MonoBehaviour
 {
     public ThanhMau ThanhMau;
     public float LuongMauHienTai;
-    public float LuongMauToiDa =10;
+    public float LuongMauToiDa = 10;
     public GameObject GameOver;
 
     // Start is called before the first frame update
     void Start()
     {
         //dat luong mau khi moi bat dau 
-        ThanhMau.CapNhatThanhMau(LuongMauToiDa,LuongMauHienTai);
+        ThanhMau.CapNhatThanhMau(LuongMauToiDa, LuongMauHienTai);
         LuongMauHienTai = LuongMauToiDa;
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,8 +34,8 @@ public class playerTuongTacThanhMau : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("0"))
         {
-            
-            ThanhMau.CapNhatThanhMau(LuongMauHienTai=0, LuongMauToiDa);
+
+            ThanhMau.CapNhatThanhMau(LuongMauHienTai = 0, LuongMauToiDa);
 
             //xoa nhan vat khi het mau
             if (LuongMauHienTai == 0)

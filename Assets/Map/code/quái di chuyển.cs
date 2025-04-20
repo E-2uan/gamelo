@@ -54,7 +54,7 @@ public class enemy : MonoBehaviour
         transform.localScale = scaler;
     }
     // quai danh nhan vat khi den gan
-   
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -69,6 +69,17 @@ public class enemy : MonoBehaviour
                 animator.SetTrigger("quai");
             }
         }
-   }
+    }
+
+    //tang kill khi quai chet 
+    public void Die() 
+    {
+        //Tang kill cho nhan vat
+        FindObjectOfType<KillCounter>().AddKill();
+
+        //Xoa quai khoi man 
+        Destroy(gameObject);
+    }
+
 
 }
