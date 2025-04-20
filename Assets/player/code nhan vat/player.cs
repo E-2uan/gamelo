@@ -16,11 +16,6 @@ public class dichuyen : MonoBehaviour
     private Animator ani;
     private Rigidbody2D rb;
     private bool DangNamDat = false;
-
-    //Bien Sound effects
-    public AudioClip jumpClip;
-    public AudioClip runClip;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,7 +45,6 @@ public class dichuyen : MonoBehaviour
         // xac dinh huong nhin nhan vat
         if (NhanDiChuyen.x != 0)
         {
-            SoundManager.instance.PlaySoundOneShot(runClip);
             // phai
             if (NhanDiChuyen.x > 0)
                 transform.localScale = new Vector3(1, 1, 1);
@@ -63,7 +57,6 @@ public class dichuyen : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, LucNhay);
             ani.SetTrigger("nhay");
-            SoundManager.instance.PlaySoundOneShot(jumpClip);
         }
         // cap nhat cho ani biet co dung tren dat hay ko
         ani.SetBool("matdat", DangNamDat);

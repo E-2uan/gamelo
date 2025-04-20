@@ -571,7 +571,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802562800}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: audio, Assembly-CSharp
         m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
@@ -749,7 +749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215039042}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -839,8 +839,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802562800}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: btnStart
+        m_TargetAssemblyTypeName: audio, Assembly-CSharp
+        m_MethodName: bntClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
@@ -1345,7 +1345,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802562800}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: audio, Assembly-CSharp
         m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
@@ -3052,7 +3052,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802562800}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: audio, Assembly-CSharp
         m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
@@ -3900,6 +3900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cd64087c624e0499743cc3922ad9ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1893007324 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8757894945375616636, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+  m_PrefabInstance: {fileID: 7981781314290166967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1909907763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,7 +4621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1802562800}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: audio, Assembly-CSharp
         m_MethodName: btnStart
         m_Mode: 2
         m_Arguments:
@@ -5222,6 +5227,10 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2411533805460145672, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4504199da4e95064bb55b9356650125f, type: 3}
     - target: {fileID: 5999808605167180254, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: m_Name
       value: Audio
@@ -5229,7 +5238,11 @@ PrefabInstance:
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: sfxAudio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1893007324}
+    - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
+      propertyPath: musicCLip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4504199da4e95064bb55b9356650125f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

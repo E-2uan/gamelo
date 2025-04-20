@@ -12,9 +12,6 @@ public class Bann : MonoBehaviour
     public float ThoiGianCan = 0.001f;
     private float ThoiGianGiu = 0f;
     private bool DangGiuPhim = false;
-
-    public AudioClip fightClip;
-
     private void Update()
     {
         // Khi Moi giu phim
@@ -39,7 +36,6 @@ public class Bann : MonoBehaviour
             if (ThoiGianGiu >= ThoiGianCan)
             {
                 Shoot();
-                SoundManager.instance.PlaySoundOneShot(fightClip);
             }
 
             //dat lai time
