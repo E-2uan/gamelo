@@ -350,6 +350,14 @@ PrefabInstance:
       propertyPath: LayerMatDat.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 5526517014148757571, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526517014148757571, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 5527103484446976409, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1077,7 +1085,6 @@ GameObject:
   - component: {fileID: 840834845}
   - component: {fileID: 840834844}
   - component: {fileID: 840834843}
-  - component: {fileID: 840834846}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1159,18 +1166,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &840834846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 840834842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &904810344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8622955061627365714, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
@@ -2269,6 +2264,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3642280294975019940, guid: 952964887252642419cf731818f036bd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4421477685778640869, guid: 952964887252642419cf731818f036bd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 717.7747
@@ -2432,6 +2431,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7926593555094560694, guid: 952964887252642419cf731818f036bd, type: 3}
+    - {fileID: 1992454199727868008, guid: 952964887252642419cf731818f036bd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952964887252642419cf731818f036bd, type: 3}
@@ -2606,6 +2606,6 @@ SceneRoots:
   - {fileID: 1368247098}
   - {fileID: 1005324267}
   - {fileID: 791230119}
-  - {fileID: 784838643}
   - {fileID: 1587153474}
   - {fileID: 66255418}
+  - {fileID: 784838643}
