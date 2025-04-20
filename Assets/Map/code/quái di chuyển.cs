@@ -8,15 +8,20 @@ public class enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float distance = 5f;
+    [SerializeField] private float attackRange = 1.5f;
+
     private Vector3 startPos;
     private bool movingLeft = true;
     private Animator animator;
+    private Transform player;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         animator = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -24,7 +29,11 @@ public class enemy : MonoBehaviour
     {
         //khai bao gia tri di chuyen trai phai
         float leftBound = startPos.x + distance;
-        float rightBound = startPos.x - distance; 
+        float rightBound = startPos.x - distance;
+        
+        // Kiểm tra khoảng cách đến player
+        float playerDistance = Vector2.Distance(transform.position, player.position);
+
         if (movingLeft)
         {
             //di chuyen trai
@@ -53,23 +62,37 @@ public class enemy : MonoBehaviour
         scaler.x *= -1; // lat nguoc quai
         transform.localScale = scaler;
     }
+
     // quai danh nhan vat khi den gan
 
 
+
+
+    // Khi enemy va chạm với player
+    private void OnCollisionEnter2D(Collision2D collision) 
+    {
+        if (collision.gameObject.CompareTag("player"))
+        {
+            animator.SetTrigger("Attack");
+            animator.SetBool("IsMoving", false);
+        }        
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("player"))
         {
-            animator.SetTrigger("khôngđánh");
-        }
-        else
-        {
-            if (collision.gameObject.CompareTag("player"))
-            {
-                animator.SetTrigger("quai");
-            }
+            animator.SetBool("IsMoving", true);
+            animator.SetTrigger("KhongMatMau");
         }
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Dan"))
+        {
+            animator.SetTrigger("MatMau");
+        }
+    }
+
 
     //tang kill khi quai chet 
     public void Die() 
@@ -80,6 +103,5 @@ public class enemy : MonoBehaviour
         //Xoa quai khoi man 
         Destroy(gameObject);
     }
-
 
 }
