@@ -21,7 +21,6 @@ public class GameOverHandler : MonoBehaviour
         deathCount++; // Tăng DeathCount
         PlayerPrefs.SetInt("DeathCount", deathCount); // Lưu lại vào PlayerPrefs
         PlayerPrefs.Save();
-        Debug.Log("DeathCount incremented to: " + deathCount);
     }
 
     // Reset trạng thái khi GameOver bị tắt (để lần sau có thể tăng lại)

@@ -19,10 +19,10 @@ public class NewBehaviourScript : MonoBehaviour
         closeButton.onClick.AddListener(CloseAchievementPanel);
     }
 
-    void ShowAchievementPanel()
-    {
-        achievementPanel.SetActive(true); // Hiển thị bảng
-    }
+    public void ShowAchievementPanel()
+        {
+            achievementPanel.SetActive(true); // Hiển thị bảng
+        }
 
     void CloseAchievementPanel()
     {
