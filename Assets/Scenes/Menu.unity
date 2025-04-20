@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 509302543}
   - component: {fileID: 509302546}
   - component: {fileID: 509302545}
-  - component: {fileID: 509302548}
+  - component: {fileID: 509302547}
   m_Layer: 5
   m_Name: Achievement panel
   m_TagString: Untagged
@@ -986,7 +986,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509302542}
   m_CullTransparentMesh: 1
---- !u!114 &509302548
+--- !u!114 &509302547
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 509302542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e25a46bfa074ef45925bc81971b2c4e, type: 3}
+  m_Script: {fileID: 11500000, guid: f212d48a64842314a9123659c65283f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   achievementPanel: {fileID: 509302542}
@@ -2760,7 +2760,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 509302548}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SuKienThanhTuu, Assembly-CSharp
         m_MethodName: IncrementPlayCount
         m_Mode: 1
@@ -4137,13 +4137,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 509302548}
+      - m_Target: {fileID: 509302547}
         m_TargetAssemblyTypeName: SuKienThanhTuu, Assembly-CSharp
         m_MethodName: ShowAchievementPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1802562800}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: btnStart
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4268,7 +4280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043737600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1802562800}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: btnStart
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043737600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4459,7 +4483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7324124638194513514, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7987154282491968407, guid: e8a6013c8dec4594d908aecad67036ab, type: 3}
       propertyPath: m_Pivot.x
@@ -4639,9 +4663,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 509302548}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowAchievementPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: btnStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SoundManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840395624247169110, guid: b676d9e1b99147c42a97e7aba22f42b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
