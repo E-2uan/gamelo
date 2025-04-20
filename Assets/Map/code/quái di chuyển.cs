@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float distance = 5f;
-    [SerializeField] private float attackRange = 1.5f;
+    
 
     private Vector3 startPos;
     private bool movingLeft = true;

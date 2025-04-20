@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: sfxAudio
       value: 
-      objectReference: {fileID: 710799081}
+      objectReference: {fileID: 0}
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: musicCLip
       value: 
@@ -262,6 +262,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 756204771865735718, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: fightClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cc8032d59c14424c8f920d5a33618af, type: 3}
     - target: {fileID: 905801712299910356, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -279,6 +283,10 @@ PrefabInstance:
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 2285080610686215366, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: dieClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c98ec6841bf4ba4da6366abd4052e9f, type: 3}
+    - target: {fileID: 2285080610686215366, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: GameOver
       value: 
       objectReference: {fileID: 904810344}
@@ -286,6 +294,10 @@ PrefabInstance:
       propertyPath: ThanhMau
       value: 
       objectReference: {fileID: 271504878}
+    - target: {fileID: 2285080610686215366, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bd03a7045681c2b40b5e6a4f214cb3b6, type: 3}
     - target: {fileID: 2588838145114195850, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: KhoDan
       value: 
@@ -346,6 +358,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: runClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 98eb3275ed6cb7f4eb798326c6f5d9cc, type: 3}
+    - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: jumpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c954e1249c32d7149afab75060079673, type: 3}
     - target: {fileID: 5166607572936510657, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: LayerMatDat.m_Bits
       value: 64
@@ -548,7 +568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distance: 1
-  attackRange: 1.5
 --- !u!50 &587886567
 Rigidbody2D:
   serializedVersion: 4
@@ -883,12 +902,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distance: 1
-  attackRange: 1.5
---- !u!82 &710799081 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8757894945375616636, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
-  m_PrefabInstance: {fileID: 66255418}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &784838640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1596,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distance: 1
-  attackRange: 1.5
 --- !u!114 &1315896249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,7 +2030,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   distance: 1
-  attackRange: 1.5
 --- !u!114 &1580399360
 MonoBehaviour:
   m_ObjectHideFlags: 0
