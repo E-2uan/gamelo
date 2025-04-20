@@ -65,7 +65,7 @@ public class dichuyen : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
             }
             // tang time neu con di chuyen
-            ThoiGianGiu += 0.02f ;
+            ThoiGianGiu += 0.02f;
         }
         //phat nhac neu di chuyen
         if (NhanDiChuyen.x != 0)

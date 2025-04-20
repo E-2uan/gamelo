@@ -87,5 +87,16 @@ public class enemy : MonoBehaviour
             animator.SetTrigger("MatMau");
         }
     }
-  
+
+
+    //tang kill khi quai chet 
+    public void Die()
+    {
+        //Tang kill cho nhan vat
+        FindObjectOfType<KillCounter>().AddKill();
+
+        //Xoa quai khoi man 
+        Destroy(gameObject);
+    }
+
 }
