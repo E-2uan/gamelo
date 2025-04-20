@@ -350,6 +350,14 @@ PrefabInstance:
       propertyPath: LayerMatDat.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 5526517014148757571, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526517014148757571, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 5527103484446976409, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
