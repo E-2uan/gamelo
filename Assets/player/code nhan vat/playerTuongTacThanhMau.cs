@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class playerTuongTacThanhMau : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class playerTuongTacThanhMau : MonoBehaviour
     public float LuongMauHienTai;
     public float LuongMauToiDa = 10;
     public GameObject GameOver;
+
+    //bien sound effects
+    public AudioClip dieClip;
+    public AudioClip hurtClip;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +30,10 @@ public class playerTuongTacThanhMau : MonoBehaviour
         {
             LuongMauHienTai -= 1;
             ThanhMau.CapNhatThanhMau(LuongMauHienTai, LuongMauToiDa);
-
-            //xoa nhan vat khi het mau
-            if (LuongMauHienTai < 0)
-            {
-                Destroy(this.gameObject);
-                GameOver.SetActive(true);
-            }
+            
+            //am thanh mat mau
+            SoundManager.instance.PlaySoundOneShot(hurtClip);
+           
         }
         if (collision.gameObject.CompareTag("0"))
         {
@@ -40,6 +43,9 @@ public class playerTuongTacThanhMau : MonoBehaviour
             //xoa nhan vat khi het mau
             if (LuongMauHienTai == 0)
             {
+                //am thanh bi chet
+                SoundManager.instance.PlaySoundOneShot(dieClip);
+
                 Destroy(this.gameObject);
                 GameOver.SetActive(true);
             }
@@ -55,8 +61,13 @@ public class playerTuongTacThanhMau : MonoBehaviour
             LuongMauHienTai -= damagePerSecond * Time.deltaTime;
             ThanhMau.CapNhatThanhMau(LuongMauHienTai, LuongMauToiDa);
 
+            //am thanh mat mau
+            SoundManager.instance.PlaySoundOneShot(hurtClip);
             if (LuongMauHienTai <= 0)
             {
+                //am thanh bi chet
+                SoundManager.instance.PlaySoundOneShot(dieClip);
+
                 Destroy(this.gameObject);
                 GameOver.SetActive(true);
             }
