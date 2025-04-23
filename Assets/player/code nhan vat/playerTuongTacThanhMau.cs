@@ -87,7 +87,7 @@ public class playerTuongTacThanhMau : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("1"))
         {
             // G
             float damagePerSecond = 1f;

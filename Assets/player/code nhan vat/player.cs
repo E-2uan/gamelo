@@ -124,7 +124,7 @@ public class dichuyen : MonoBehaviour
      private void OnTriggerStay2D(Collider2D other)
     {
       
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("1"))
                 ani.SetTrigger("BiThuong");
     }
 }

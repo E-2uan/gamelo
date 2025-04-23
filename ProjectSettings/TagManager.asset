@@ -9,6 +9,7 @@ TagManager:
   - player
   - 0
   - Dan
+  - 1
   layers:
   - Default
   - TransparentFX

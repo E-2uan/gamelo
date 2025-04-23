@@ -1497,7 +1497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: enemies.Array.size
@@ -2495,6 +2495,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1178770149763352237, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649291364808714674, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
+      propertyPath: m_TagString
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5935270912389461704, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
