@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 1741805749689645219, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: a4829b0b47a60a84d89e173f3f8838bc, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2198093754214993388, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.04110647
@@ -198,7 +198,7 @@ PrefabInstance:
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: musicCLip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: a4829b0b47a60a84d89e173f3f8838bc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
