@@ -558,6 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LuongMauHienTai: 0
   LuongMauToiDa: 10
+  quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
 --- !u!114 &587886566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,6 +893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LuongMauHienTai: 0
   LuongMauToiDa: 10
+  quaiDie: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
 --- !u!114 &636257949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1310,6 +1312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 773336216621610016, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
+      propertyPath: quaiDie
+      value: 
+      objectReference: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
     - target: {fileID: 1328055792038587036, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: speed
       value: 2
@@ -1644,6 +1650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LuongMauHienTai: 0
   LuongMauToiDa: 10
+  quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
 --- !u!95 &1315896250
 Animator:
   serializedVersion: 5
@@ -2078,6 +2085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LuongMauHienTai: 0
   LuongMauToiDa: 10
+  quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
 --- !u!95 &1580399361
 Animator:
   serializedVersion: 5

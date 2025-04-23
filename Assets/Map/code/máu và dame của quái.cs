@@ -7,6 +7,8 @@ public class máuvàdamecủaquái : MonoBehaviour
     public float LuongMauHienTai;
     public float LuongMauToiDa = 10;
 
+    //bien am thanh quai chet
+    public AudioClip quaiDie;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +20,17 @@ public class máuvàdamecủaquái : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Dan"))
         {
-            LuongMauHienTai -= 1;       
+            LuongMauHienTai -= 1;
 
-            //xoa nhan vat khi het mau
-            if (LuongMauHienTai < 0)
+            if (LuongMauHienTai <= 0)
             {
+                SoundManager.instance.PlaySoundOneShot(quaiDie);
+            }
+                
+            //xoa nhan vat khi het mau
+            if (LuongMauHienTai <= 0)
+            {
+                SoundManager.instance.PlaySoundOneShot(quaiDie);
                 Destroy(this.gameObject);
             }
         }

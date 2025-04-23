@@ -18,7 +18,7 @@ public class dichuyen : MonoBehaviour
     private bool DangNamDat = false;
 
     //quyen sua nhac
-    private float ThoiGianGiu = 0f;
+    private float ThoiGianGiu = 1.99f;
 
     //Bien Sound effects
     public AudioClip jumpClip;
@@ -53,7 +53,8 @@ public class dichuyen : MonoBehaviour
         // xac dinh huong nhin nhan vat
         if (NhanDiChuyen.x != 0)
         {
-
+            // tang time neu con di chuyen
+               ThoiGianGiu += 0.02f;
             // phai
             if (NhanDiChuyen.x > 0)
             {
@@ -64,8 +65,7 @@ public class dichuyen : MonoBehaviour
             {
                 transform.localScale = new Vector3(-1, 1, 1);
             }
-            // tang time neu con di chuyen
-            ThoiGianGiu += 0.02f;
+          
         }
         //phat nhac neu di chuyen
         if (NhanDiChuyen.x != 0 && DangNamDat)
