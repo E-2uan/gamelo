@@ -5,10 +5,11 @@ using UnityEngine;
 public class máuvàdamecủaquái : MonoBehaviour
 {
     public float LuongMauHienTai;
-    public float LuongMauToiDa = 10;
+    public float LuongMauToiDa = 3;
 
     //bien am thanh quai chet
     public AudioClip quaiDie;
+    public AudioClip quaiHurt;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,7 @@ public class máuvàdamecủaquái : MonoBehaviour
         if (other.gameObject.CompareTag("Dan"))
         {
             LuongMauHienTai -= 1;
-
-            if (LuongMauHienTai <= 0)
-            {
-                SoundManager.instance.PlaySoundOneShot(quaiDie);
-            }
-                
+            SoundManager.instance.PlaySoundOneShot(quaiHurt);
             //xoa nhan vat khi het mau
             if (LuongMauHienTai <= 0)
             {
@@ -35,9 +31,12 @@ public class máuvàdamecủaquái : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
-    void Update()
+    public  void Die()
     {
-        
+        if (LuongMauHienTai <= 0)
+        {
+             FindObjectOfType<KillCounter>().AddKill();
+        }
     }
+
 }

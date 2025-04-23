@@ -58,7 +58,7 @@ public class playerTuongTacThanhMau : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // G
+            // cap nhap thanh mau theo thoi gian
             float damagePerSecond = 1f;
             LuongMauHienTai -= damagePerSecond * Time.deltaTime;
             ThanhMau.CapNhatThanhMau(LuongMauHienTai, LuongMauToiDa);

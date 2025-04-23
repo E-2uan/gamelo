@@ -23,12 +23,12 @@ public class SoundManager: MonoBehaviour
         sfxAudio = GetComponent<AudioSource>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         musicAudio.clip= musicCLip; ;
         musicAudio.Play();
     }
+    //Sound button
     public void btnStart(AudioClip nutClip)
     { 
         sfxAudio.clip= nutClip;

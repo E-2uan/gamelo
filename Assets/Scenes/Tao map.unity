@@ -893,7 +893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LuongMauHienTai: 0
   LuongMauToiDa: 10
-  quaiDie: {fileID: 8300000, guid: cf5266a9437679243b436480aaeab4d6, type: 3}
+  quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
 --- !u!114 &636257949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1503,7 +1503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3487580617099006871, guid: e683c5a5ac8c1ff429b68dd3b6e149d6, type: 3}
       propertyPath: enemies.Array.size
