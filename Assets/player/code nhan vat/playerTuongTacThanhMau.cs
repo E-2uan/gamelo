@@ -85,4 +85,36 @@ public class playerTuongTacThanhMau : MonoBehaviour
             }
         }
     }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            // G
+            float damagePerSecond = 1f;
+            LuongMauHienTai -= damagePerSecond * Time.deltaTime;
+            ThanhMau.CapNhatThanhMau(LuongMauHienTai, LuongMauToiDa);
+
+            // tang time neu con mat mau
+            ThoiGianGiu += 0.05f;
+
+            //am thanh mat mau lien tuc
+            if (ThoiGianGiu >= 1)
+            {
+                SoundManager.instance.PlaySoundOneShot(hurtClip);
+
+                //dat lai time sau khi phat
+                ThoiGianGiu = 0f;
+            }
+
+            if (LuongMauHienTai <= 0)
+            {
+                //am thanh bi chet
+                SoundManager.instance.PlaySoundOneShot(dieClip);
+
+                Destroy(this.gameObject);
+                GameOver.SetActive(true);
+            }
+        }
+
+    }
 }

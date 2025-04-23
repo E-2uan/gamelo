@@ -121,4 +121,10 @@ public class dichuyen : MonoBehaviour
             ani.SetTrigger("BiThuong");
         }
     }
+     private void OnTriggerStay2D(Collider2D other)
+    {
+      
+            if (other.gameObject.CompareTag("Enemy"))
+                ani.SetTrigger("BiThuong");
+    }
 }

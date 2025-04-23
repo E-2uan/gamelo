@@ -2493,6 +2493,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178770149763352237, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5935270912389461704, guid: 3becdd5c9403f6343abe5d6e07ea0725, type: 3}
       propertyPath: m_Name
       value: tricklor
