@@ -93,11 +93,11 @@ public class dichuyen : MonoBehaviour
         ani.SetBool("matdat", DangNamDat);
 
         //nhanvat tan cong
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             ani.SetBool("Danh", true);
         }
-        else if (!Input.GetKey(KeyCode.Q))
+        else if (!Input.GetKey(KeyCode.Return))
         {
             ani.SetBool("Danh", false);
         }

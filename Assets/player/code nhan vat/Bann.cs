@@ -18,20 +18,20 @@ public class Bann : MonoBehaviour
     private void Update()
     {
         // Khi Moi giu phim
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             DangGiuPhim = true;
             ThoiGianGiu = 0f;
         }
 
         // trong luc giu phimm
-        if (DangGiuPhim && Input.GetKey(KeyCode.Q))
+        if (DangGiuPhim && Input.GetKey(KeyCode.Return))
         {
             ThoiGianGiu += Time.deltaTime;
         }
 
         // tha phim
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.Return))
         {
             DangGiuPhim = false;
 
