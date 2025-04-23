@@ -68,19 +68,19 @@ public class dichuyen : MonoBehaviour
             ThoiGianGiu += 0.02f;
         }
         //phat nhac neu di chuyen
-        if (NhanDiChuyen.x != 0)
+        if (NhanDiChuyen.x != 0 && DangNamDat)
         {
-            if (ThoiGianGiu >= 1)
+            if (ThoiGianGiu >= 2)
             {
                 SoundManager.instance.PlaySoundOneShot(runClip);
 
                 //dat lai time sau khi phat
-                ThoiGianGiu = 0f;      
+                ThoiGianGiu = -1f;      
             }
         }
         // dat lai time sau khi ko di chuyen nua
         else
-            ThoiGianGiu = 0f;
+            ThoiGianGiu = -1f;
 
         // Xu ly nhay
         if (Input.GetKeyDown(KeyCode.Space) && DangNamDat && !DauChamDat)
