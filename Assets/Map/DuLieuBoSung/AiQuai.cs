@@ -2,7 +2,7 @@
 
 public class aiQuai : MonoBehaviour
 {
-    public float TocDoQuai = 3f;
+    public float TocDoQuai = 1f;
     public LayerMask LayerMatDat;
     public LayerMask LayerNhay;
 
@@ -10,7 +10,7 @@ public class aiQuai : MonoBehaviour
     public Transform KiemTraDat;
 
     public float ktGround = 1f;
-    public float LucNhay = 8f;
+    public float LucNhay = 3.5f;
     public float offsetCheck = 1f;
 
     private Rigidbody2D rb;
@@ -30,14 +30,14 @@ public class aiQuai : MonoBehaviour
         if (mucTieu == null) return;
 
         float KhoangCach = Vector2.Distance(transform.position, mucTieu.position);
-        if (KhoangCach < 4.4f)
+        if (KhoangCach < 5f)
         {
             float Duoi = Mathf.Sign(mucTieu.position.x - transform.position.x);
             rb.velocity = new Vector2(Duoi * TocDoQuai, rb.velocity.y);
-            transform.localScale = new Vector3(Mathf.Abs(scaleGoc.x) * (Duoi > 0f ? -1f : 1f),scaleGoc.y,scaleGoc.z);
-
-            RaycastHit2D hitNhay = Physics2D.Raycast(KiemTraDat.position,Vector2.down,ktGround,LayerMatDat);
+            transform.localScale = new Vector3(Mathf.Abs(scaleGoc.x) * (Duoi > 0f ? -1f : 1f), scaleGoc.y, scaleGoc.z);
+            RaycastHit2D hitNhay = Physics2D.Raycast(KiemTraDat.position, Vector2.down, ktGround, LayerNhay);
             if (hitNhay.collider != null && hitNhay.collider.name == "11")
+
                 rb.velocity = new Vector2(rb.velocity.x, LucNhay);
         }
         else
@@ -45,8 +45,8 @@ public class aiQuai : MonoBehaviour
             rb.velocity = new Vector2(Huong * TocDoQuai, rb.velocity.y);
             Vector2 checkPoint = (Vector2)KiemTraDat.position + Vector2.right * Huong * offsetCheck;
 
-            RaycastHit2D hitDat = Physics2D.Raycast(KiemTraDat.position, Vector2.down, ktGround,LayerMatDat);
-            RaycastHit2D hitNhay = Physics2D.Raycast(KiemTraDat.position,Vector2.down,ktGround,LayerNhay);
+            RaycastHit2D hitDat = Physics2D.Raycast(KiemTraDat.position, Vector2.down, ktGround, LayerMatDat);
+            RaycastHit2D hitNhay = Physics2D.Raycast(KiemTraDat.position, Vector2.down, ktGround, LayerNhay);
             if (hitNhay.collider != null && hitNhay.collider.name == "12")
                 rb.velocity = new Vector2(rb.velocity.x, LucNhay);
 
@@ -60,7 +60,7 @@ public class aiQuai : MonoBehaviour
                 DangQuayHuong = false;
             }
 
-            transform.localScale = new Vector3(Mathf.Abs(scaleGoc.x) * (Huong > 0f ? -1f : 1f),scaleGoc.y,scaleGoc.z);
+            transform.localScale = new Vector3(Mathf.Abs(scaleGoc.x) * (Huong > 0f ? -1f : 1f), scaleGoc.y, scaleGoc.z);
         }
     }
 }
