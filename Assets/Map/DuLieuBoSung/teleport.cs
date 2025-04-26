@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Diagnostics.Contracts;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class teleport : MonoBehaviour
@@ -22,14 +23,11 @@ public class teleport : MonoBehaviour
         {
             if (Vector2.Distance(player.transform.position, transform.position) > 0.3f)
             {
-                StartCoroutine(VaoCongDichChuyen());
-                //StartCoroutine(HutVaoTamCong());
-                //player.transform.position = diemDichChuyen.transform.position;
+                StartCoroutine(playerVaoCongDichChuyen());
             }
-
         }
     }
-    IEnumerator VaoCongDichChuyen()
+    IEnumerator playerVaoCongDichChuyen()
     {
         //tat rigidbody 
         rb.simulated = false;
@@ -41,7 +39,6 @@ public class teleport : MonoBehaviour
         //bat lai rigidbody
         rb.simulated = true;
     }
-
     IEnumerator HutVaoTamCong()
     {
         float thoigian = 0f;

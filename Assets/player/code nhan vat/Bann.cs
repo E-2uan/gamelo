@@ -9,41 +9,32 @@ public class Bann : MonoBehaviour
     public ObjectPooling KhoDan;
     public Transform Ban;
     public float TocDoBan = 10f;
-    public float ThoiGianCan = 0.001f;
-    private float ThoiGianGiu = 0f;
-    private bool DangGiuPhim = false;
+    public float ThoiGianBan = 0;
+    public Animator Danh;
 
     public AudioClip fightClip;
 
+    private void Start()
+    {
+        Danh = GetComponent<Animator>();
+    }
     private void Update()
     {
-        // Khi Moi giu phim
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            DangGiuPhim = true;
-            ThoiGianGiu = 0f;
-        }
-
-        // trong luc giu phimm
-        if (DangGiuPhim && Input.GetKey(KeyCode.Return))
-        {
-            ThoiGianGiu += Time.deltaTime;
-        }
-
         // tha phim
-        if (Input.GetKeyUp(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Return))
         {
-            DangGiuPhim = false;
-
-            // ban neu du time
-            if (ThoiGianGiu >= ThoiGianCan)
+            ThoiGianBan += 0.05f;
+            if (ThoiGianBan > 0.5)
             {
                 Shoot();
+                ThoiGianBan = 0;
                 SoundManager.instance.PlaySoundOneShot(fightClip);
             }
-
-            //dat lai time
-            ThoiGianGiu = 0f; 
+        }
+        else if(Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(animationShot());
+            SoundManager.instance.PlaySoundOneShot(fightClip);
         }
     }
 
@@ -64,5 +55,12 @@ public class Bann : MonoBehaviour
             // 
             rb.velocity = -Ban.right * TocDoBan;
         }
+    }
+    IEnumerator animationShot()
+    {
+        Danh.SetBool("New Bool", true); 
+        yield return new WaitForSeconds(0.5f);
+        Shoot();
+        Danh.SetBool("New Bool", false);
     }
 }

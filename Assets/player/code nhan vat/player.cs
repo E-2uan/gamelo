@@ -18,7 +18,9 @@ public class dichuyen : MonoBehaviour
     private bool DangNamDat = false;
 
     //quyen sua nhac
-    private float ThoiGianGiu = 1.99f;
+    private float ThoiGianGiu = 1.49f;
+
+    public float ThoiGianAnimation=0f;
 
     //Bien Sound effects
     public AudioClip jumpClip;
@@ -70,17 +72,17 @@ public class dichuyen : MonoBehaviour
         //phat nhac neu di chuyen
         if (NhanDiChuyen.x != 0 && DangNamDat)
         {
-            if (ThoiGianGiu >= 2)
+            if (ThoiGianGiu >= 1.5)
             {
                 SoundManager.instance.PlaySoundOneShot(runClip);
 
                 //dat lai time sau khi phat
-                ThoiGianGiu = -1f;      
+                ThoiGianGiu = 0f;      
             }
         }
         // dat lai time sau khi ko di chuyen nua
         else
-            ThoiGianGiu = -1f;
+            ThoiGianGiu = 1.49f;
 
         // Xu ly nhay
         if (Input.GetKeyDown(KeyCode.Space) && DangNamDat && !DauChamDat)
@@ -93,13 +95,22 @@ public class dichuyen : MonoBehaviour
         ani.SetBool("matdat", DangNamDat);
 
         //nhanvat tan cong
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Return))
         {
             ani.SetBool("Danh", true);
         }
         else if (!Input.GetKey(KeyCode.Return))
         {
             ani.SetBool("Danh", false);
+        }
+        else if (Input.GetKeyDown(KeyCode.L)) 
+        {
+            ThoiGianAnimation += 0.05f;
+            if(ThoiGianAnimation > 0.25f)
+            {
+                ani.SetBool("Danh", true);
+                ThoiGianAnimation = 0;
+            }
         }
 
     }
@@ -127,4 +138,5 @@ public class dichuyen : MonoBehaviour
             if (other.gameObject.CompareTag("1"))
                 ani.SetTrigger("BiThuong");
     }
+
 }
