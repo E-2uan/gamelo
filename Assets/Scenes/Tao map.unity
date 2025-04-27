@@ -287,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 62762566}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.78, y: -0.12, z: 0}
+  m_LocalPosition: {x: -0.56, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13518,7 +13518,7 @@ PrefabInstance:
     - target: {fileID: 6170017331146224081, guid: b6967799dce88ed469c7b94864f9a6df, type: 3}
       propertyPath: musicCLip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: a4829b0b47a60a84d89e173f3f8838bc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15815,6 +15815,22 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8400248095017753726, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400248095017753726, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216514492473549702, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9216514492473549702, guid: f46783a3b7b1580419de85dd58dfe205, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.78
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16153,7 +16169,7 @@ MonoBehaviour:
   LuongMauHienTai: 0
   LuongMauToiDa: 10
   quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
-  quaiHurt: {fileID: 0}
+  quaiHurt: {fileID: 8300000, guid: 5793b77f37113c047afc798e89e61c0e, type: 3}
 --- !u!114 &587886566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16645,7 +16661,7 @@ MonoBehaviour:
   LuongMauHienTai: 0
   LuongMauToiDa: 10
   quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
-  quaiHurt: {fileID: 0}
+  quaiHurt: {fileID: 8300000, guid: 5793b77f37113c047afc798e89e61c0e, type: 3}
 --- !u!114 &636257949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16922,9 +16938,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 757894659843790729, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757894659843790729, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 757894659843790729, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 1322865872778375999, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Canvas GameOver
       objectReference: {fileID: 0}
     - target: {fileID: 2472619451554836452, guid: ce6ff07bb1d04354fa354e8243febd9f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -17553,6 +17581,10 @@ PrefabInstance:
       propertyPath: quaiDie
       value: 
       objectReference: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
+    - target: {fileID: 773336216621610016, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
+      propertyPath: quaiHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: 5793b77f37113c047afc798e89e61c0e, type: 3}
     - target: {fileID: 1328055792038587036, guid: 27fc225f55ab2dc4c95dbe138c3422fa, type: 3}
       propertyPath: speed
       value: 2
@@ -17944,14 +17976,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061333055}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.26429707, w: 0.96444136}
-  m_LocalPosition: {x: -7.93, y: 2.58, z: 0.2144982}
+  m_LocalRotation: {x: -0, y: -0, z: -0.3703537, w: 0.9288909}
+  m_LocalPosition: {x: -7.930362, y: 2.574582, z: 0.2144982}
   m_LocalScale: {x: 2.0341845, y: 0.8875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1994019730}
   m_Father: {fileID: 1851990579}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.65}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -43.475}
 --- !u!61 &1061333058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18525,7 +18557,7 @@ MonoBehaviour:
   LuongMauHienTai: 0
   LuongMauToiDa: 10
   quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
-  quaiHurt: {fileID: 0}
+  quaiHurt: {fileID: 8300000, guid: 5793b77f37113c047afc798e89e61c0e, type: 3}
 --- !u!95 &1315896250
 Animator:
   serializedVersion: 5
@@ -18912,6 +18944,18 @@ PrefabInstance:
     - target: {fileID: 3220801645586828810, guid: 99765e922f6ef9345a7fa0107096fbe9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029530174502981343, guid: 99765e922f6ef9345a7fa0107096fbe9, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029530174502981343, guid: 99765e922f6ef9345a7fa0107096fbe9, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029530174502981343, guid: 99765e922f6ef9345a7fa0107096fbe9, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 8160815565326842553, guid: 99765e922f6ef9345a7fa0107096fbe9, type: 3}
       propertyPath: m_Name
@@ -19395,7 +19439,7 @@ MonoBehaviour:
   LuongMauHienTai: 0
   LuongMauToiDa: 10
   quaiDie: {fileID: 8300000, guid: 3014631236317fb40b1751fe1e4e3f83, type: 3}
-  quaiHurt: {fileID: 0}
+  quaiHurt: {fileID: 8300000, guid: 3466628ad4b99464285aa8dea03deaed, type: 3}
 --- !u!95 &1580399361
 Animator:
   serializedVersion: 5
@@ -19617,7 +19661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1505801430005361702, guid: 952964887252642419cf731818f036bd, type: 3}
       propertyPath: m_Name
-      value: Canvas (2) Variant
+      value: Canvas Pause
       objectReference: {fileID: 0}
     - target: {fileID: 2122587280844749254, guid: 952964887252642419cf731818f036bd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20895,6 +20939,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuanLiDiem
       objectReference: {fileID: 0}
+    - target: {fileID: 3994037541476923004, guid: f029d3f3ddca6414dbff222147044f4d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994037541476923004, guid: f029d3f3ddca6414dbff222147044f4d, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994037541476923004, guid: f029d3f3ddca6414dbff222147044f4d, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20912,9 +20968,9 @@ SceneRoots:
   - {fileID: 791230119}
   - {fileID: 1587153474}
   - {fileID: 66255418}
-  - {fileID: 784838643}
   - {fileID: 2179558727467571644}
   - {fileID: 261569625}
   - {fileID: 1870339292}
   - {fileID: 1598965760}
   - {fileID: 1851990579}
+  - {fileID: 784838643}
