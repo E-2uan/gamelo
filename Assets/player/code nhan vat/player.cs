@@ -17,7 +17,7 @@ public class dichuyen : MonoBehaviour
     private Rigidbody2D rb;
     private bool DangNamDat = false;
 
-    //quyen sua nhac
+    // nhac
     private float ThoiGianGiu = 1.99f;
 
     public float ThoiGianAnimation=0f;
